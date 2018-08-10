@@ -6,9 +6,177 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Your Developer Career Survey</title>
   </head>
   <body>
+    <div class="container">
 
+      <h1>Which developer career path may be right for me?</h1>
+
+      <div class="form">
+        <h3>I am a visual person.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="visual-f" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="visual-f" value="false">
+            F
+          </label>
+        </div>
+        <h3>I love problem solving.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="problem-b" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="problem-b" value="false">
+            F
+          </label>
+        </div>
+        <h3>I like graphic design.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="graphic-f" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="graphic-f" value="false">
+            F
+          </label>
+        </div>
+        <h3>I like to think about how people will use what I make.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="user-f" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="user-f" value="false">
+            F
+          </label>
+        </div>
+        <h3>I enjoy solving logic problems.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="logic-b" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="logic-b" value="false">
+            F
+          </label>
+        </div>
+        <h3>I thrive with complexity.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="complexity-b" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="complexity-b" value="false">
+            F
+          </label>
+        </div>
+        <h3>I like to work with data.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="data-b" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="data-b" value="false">
+            F
+          </label>
+        </div>
+        <h3>I care a lot about the way things look.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="aesthetics-f" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="aesthetics-f" value="false">
+            F
+          </label>
+        </div>
+        <h3>I often think about systems.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="systems-b" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="systems-b" value="false">
+            F
+          </label>
+        </div>
+        <h3>I have an eye for color, whether bright or subtle.</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color-f" value="true" checked>
+            T
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color-f" value="false">
+            F
+          </label>
+        </div>
+
+        <!-- Next section will be hidden -->
+        <p id="hidden-f">You may want to consider Front-End Development, where the user interaction with a product is paramount.  If you choose Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.</p>
+        <p id="hidden-b">You may want to consider Back-End Development, where the business logic systems are built.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
+        <p id="hidden-s">You may want to consider becoming a Full-Stack Developer, who learns both the Back-End--where the business logic systems are built--and Front-End--where the user interaction with a product is paramount.  Many developers start out in one or the other and expand their knowledge in their career.  For Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
+
+        <!-- next section is about specific languages, which comes up only if Back-End or Full-Stack was returned above -->
+
+        <h3>What type of company would you like to work in?</h3>
+        Large - business software (C#, Java)
+        Large - content management (PHP)
+        Small - startups (Ruby)
+        <h3>What are you interested in building?</h3>
+        Business software (C#, Java)
+        Websites(PHP)
+        Interactive Web Applications(Ruby)
+        Android Applications (Java)
+        <h3>What systems do you like?</h3>
+        Business software (C#, Java)
+        Complex security and stability(PHP)
+        User entered data, dynamic web content(Ruby)
+        High performance processing (Java)
+
+        <!-- hidden answer. -->
+        <p>You may want to consider the following language<span id="plural">s</span>:</p>
+        <p id="c">C#</p>
+        <p id="java">Java</p>
+        <p id="php">PHP</p>
+        <p id="ruby">Ruby</p>
+
+        <!-- change language, borrowed from epicodus page -->
+        <p>However, even though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. The most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does.</p>
+      </div>
+    </div>
   </body>
-</html>
+  </html>
