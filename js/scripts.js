@@ -24,6 +24,7 @@ $(document).ready(function(){
       $("#hidden-b").show();
       $("#lang-survey").show();
     }
+    window.scrollBy(0,1000);
   })
 
 
@@ -110,6 +111,7 @@ $(document).ready(function(){
       if (plural > 1){
         $("#plural").show();
       }
+      window.scrollBy(0,1000);
 
     });
 
