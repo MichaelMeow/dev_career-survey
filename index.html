@@ -13,148 +13,148 @@
 
     <h1>Which developer career path may be right for me?</h1>
 
-    <div class="form">
+    <form id="tf">
       <h3>I am a visual person.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="visual-f" value="true" checked>
+          <input type="radio" name="visual-f" value="1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="visual-f" value="false">
+          <input type="radio" name="visual-f" value="-1">
           F
         </label>
       </div>
       <h3>I love problem solving.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="problem-b" value="true" checked>
+          <input type="radio" name="problem-b" value="-1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="problem-b" value="false">
+          <input type="radio" name="problem-b" value="1">
           F
         </label>
       </div>
       <h3>I like graphic design.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="graphic-f" value="true" checked>
+          <input type="radio" name="graphic-f" value="1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="graphic-f" value="false">
+          <input type="radio" name="graphic-f" value="-1">
           F
         </label>
       </div>
       <h3>I like to think about how people will use what I make.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="user-f" value="true" checked>
+          <input type="radio" name="user-f" value="1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="user-f" value="false">
+          <input type="radio" name="user-f" value="-1">
           F
         </label>
       </div>
       <h3>I enjoy solving logic problems.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="logic-b" value="true" checked>
+          <input type="radio" name="logic-b" value="-1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="logic-b" value="false">
+          <input type="radio" name="logic-b" value="1">
           F
         </label>
       </div>
       <h3>I thrive with complexity.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="complexity-b" value="true" checked>
+          <input type="radio" name="complexity-b" value="-1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="complexity-b" value="false">
+          <input type="radio" name="complexity-b" value="1">
           F
         </label>
       </div>
       <h3>I like to work with data.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="data-b" value="true" checked>
+          <input type="radio" name="data-b" value="-1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="data-b" value="false">
+          <input type="radio" name="data-b" value="1">
           F
         </label>
       </div>
       <h3>I care a lot about the way things look.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="aesthetics-f" value="true" checked>
+          <input type="radio" name="aesthetics-f" value="1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="aesthetics-f" value="false">
+          <input type="radio" name="aesthetics-f" value="-1">
           F
         </label>
       </div>
       <h3>I often think about systems.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="systems-b" value="true" checked>
+          <input type="radio" name="systems-b" value="-1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="systems-b" value="false">
+          <input type="radio" name="systems-b" value="1">
           F
         </label>
       </div>
       <h3>I have an eye for color, whether bright or subtle.</h3>
       <div class="radio">
         <label>
-          <input type="radio" name="color-f" value="true" checked>
+          <input type="radio" name="color-f" value="1">
           T
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="color-f" value="false">
+          <input type="radio" name="color-f" value="-1">
           F
         </label>
       </div>
 
 <!-- submit button, hide after submitted -->
-      <button type="submit" class="btn">Submit</button>
-
+      <button type="submit" class="btn" id="tf-btn">Submit</button>
+</form>
       <!-- Next section will be hidden -->
       <p id="hidden-f">You may want to consider Front-End Development, where the user interaction with a product is paramount.  If you choose Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.</p>
       <p id="hidden-b">You may want to consider Back-End Development, where the business logic systems are built.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
       <p id="hidden-s">You may want to consider becoming a Full-Stack Developer, who learns both the Back-End--where the business logic systems are built--and Front-End--where the user interaction with a product is paramount.  Many developers start out in one or the other and expand their knowledge in their career.  For Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
 
       <!-- next section is about specific languages, which comes up only if Back-End or Full-Stack was returned above -->
-      <div class="lang-survey">
+      <form id="lang-survey">
 
         <h3>What type of company would you like to work in?</h3>
         <input type="checkbox">
@@ -187,10 +187,10 @@
         <!-- submit button, hide after submitted -->
         <button type="submit" class="btn">Submit</button>
 
-      </div>
+      </form>
 
       <!-- hidden answer. -->
-      <div class="lang-answer">
+      <div id="lang-answer">
 
         <p>You may want to consider the following language<span id="plural">s</span>:</p>
         <!-- make this an unordered list -->
