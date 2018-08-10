@@ -19,6 +19,7 @@ $(document).ready(function(){
     }
     if (n > 0) {
       $("#hidden-f").show();
+      $("#end-message").show();
     }
     if (n < 0) {
       $("#hidden-b").show();
@@ -111,7 +112,9 @@ $(document).ready(function(){
       if (plural > 1){
         $("#plural").show();
       }
-      window.scrollBy(0,1000);
+      window.scrollBy(0,300);
+
+      $("#end-message").show();
 
     });
 
