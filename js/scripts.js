@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-
-
-
   $("#tf").submit(function(event) {
     event.preventDefault();
     $("#tf-btn").hide();
@@ -94,20 +91,21 @@ $(document).ready(function(){
 
         if (this[1] == "c"){
           console.log("working");
-          $("#c").show();
+          $("#lang-answer").append($("#c"));
           plural ++;
         }else if (this[1] == "java"){
-          $("#java").show();
+          $("#lang-answer").append($("#java"));
           plural ++;
         }else if (this[1] == "php"){
-          $("#php").show();
+          $("#lang-answer").append($("#php"));
           plural ++;
         }else if (this[1] == "ruby"){
-          $("#ruby").show();
+          $("#lang-answer").append($("#ruby"));
           plural ++;
         }
       }
-
+        $("#lang-answer").show();
+        $("#consider").show();
 
       if (plural > 1){
         $("#plural").show();

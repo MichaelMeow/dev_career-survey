@@ -2,7 +2,7 @@
   display: block;
 }
 
-#hidden-f, #hidden-b, #hidden-s, #lang-survey, #lang-answer, #c, #java, #php, #ruby, #plural, #end-message {
+#hidden-f, #hidden-b, #hidden-s, #lang-survey, #hidden-answers, #lang-answer, #plural, #end-message {
   display: none;
 }
 .btn{
