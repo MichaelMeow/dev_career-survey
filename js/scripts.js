@@ -6,7 +6,7 @@ $(document).ready(function(){
   $("#tf").submit(function(event) {
     event.preventDefault();
     $("#tf-btn").hide();
-
+    $("input:radio").attr('disabled',true);
     var n = 0;
     $("input:radio:checked").each(function() {
       n += parseInt($(this).val());
@@ -32,6 +32,7 @@ $(document).ready(function(){
     event.preventDefault();
     $("#lang-btn").hide();
     $("#lang-answer").show();
+    $("input:checkbox").attr('disabled',true);
     // multipe answers displayed, and sorted based on most commonly checked relevant answers
 
 
