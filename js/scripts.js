@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+
+
+
   $("#tf").submit(function(event) {
     event.preventDefault();
     $("#tf-btn").hide();
@@ -109,6 +113,6 @@ $(document).ready(function(){
     });
 
 
-  
+
   })
 })

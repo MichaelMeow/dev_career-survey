@@ -5,3 +5,26 @@
 #hidden-f, #hidden-b, #hidden-s, #lang-survey, #lang-answer, #c, #java, #php, #ruby, #plural {
   display: none;
 }
+
+h1{
+  margin: 50px;
+}
+
+h3{
+  font-size: 1em;
+  margin: 10px;
+}
+
+body{
+  color: grey;
+}
+
+.btn-light {
+  color: grey;
+
+}
+
+.btn-light:hover {
+  color: grey;
+
+}
