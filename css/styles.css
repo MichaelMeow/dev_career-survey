@@ -1,3 +1,7 @@
 .box-container {
   display: block;
 }
+
+#hidden-f, #hidden-b, #hidden-s, .lang-survey, .lang-answer, #c, #java, #php, #ruby {
+  display: none;
+}
