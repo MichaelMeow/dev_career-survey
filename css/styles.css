@@ -2,6 +2,6 @@
   display: block;
 }
 
-#hidden-f, #hidden-b, #hidden-s, #lang-survey, #lang-answer, #c, #java, #php, #ruby {
+#hidden-f, #hidden-b, #hidden-s, #lang-survey, #lang-answer, #c, #java, #php, #ruby, #plural {
   display: none;
 }

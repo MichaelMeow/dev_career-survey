@@ -26,7 +26,8 @@ $(document).ready(function(){
 
   $("#lang-survey").submit(function() {
     event.preventDefault();
-    $("#tf-btn").hide();
+    $("#lang-btn").hide();
+    $("#lang-answer").show();
     // multipe answers displayed, and sorted based on most commonly checked relevant answers
 
 
@@ -58,7 +59,7 @@ $(document).ready(function(){
     if (n.includes("php")){
       php.push((n.match(/php/g)).length, "php");
     } else{
-      php.push(0, php);
+      php.push(0, "php");
     }
 
     if (n.includes("ruby")){
@@ -69,13 +70,45 @@ $(document).ready(function(){
     console.log(langs);
     console.log(langs[0]);
     langs.sort(function(a, b)
-{
-    return b[0] - a[0];
-});
+    {
+      return b[0] - a[0];
+    });
 
     console.log(langs);
     console.log(langs[0]);
 
 
+    var plural = 0
+    $(langs).each(function(){
+      console.log(this[1]);
+      if (this[0] == 0){
+        // do nothing
+      } else{
+
+        if (this[1] == "c"){
+          console.log("working");
+          $("#c").show();
+          plural ++;
+        }else if (this[1] == "java"){
+          $("#java").show();
+          plural ++;
+        }else if (this[1] == "php"){
+          $("#php").show();
+          plural ++;
+        }else if (this[1] == "ruby"){
+          $("#ruby").show();
+          plural ++;
+        }
+      }
+
+
+      if (plural > 1){
+        $("#plural").show();
+      }
+
+    });
+
+
+  
   })
 })
