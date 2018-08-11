@@ -1,4 +1,4 @@
-[# New Developer Survey](https://michaelmeow.github.io/dev_career_survey)
+#[New Developer Survey](https://michaelmeow.github.io/dev_career_survey)
 
 #### Survey designed for aspiring developers, 8-10-18
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-This survey will help a new developer wether to start in front end or back end development, and then help them determine what programming language they might want to learn.
+This survey will help a new developer whether to start in front end or back end development, and then help them determine what programming language they might want to learn.
 
 ## Setup/Installation Requirements
 
@@ -29,7 +29,7 @@ Please contact dearmichaelmeow@gmail.com with questions or comments.
 
 ## Technologies Used
 
-This page uses Bootstrap CSS along with HTML and CSS, and Javascript with Jquery. 
+This page uses Bootstrap CSS along with HTML and CSS, and Javascript with Jquery.
 
 ### License
 
