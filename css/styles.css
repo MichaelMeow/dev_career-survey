@@ -1,39 +1,26 @@
-.box-container {
-  display: block;
-}
-
 #hidden-f, #hidden-b, #hidden-s, #lang-survey, #hidden-answers, #lang-answer, #plural, #end-message {
   display: none;
 }
-.btn{
-  margin-top: 10px;
-}
-
-
-
-
 
 h1{
-    text-shadow: 0px 4px white;
- color:#ffc107;
+  text-shadow: 0px 4px white;
+  color:#ffc107;
   text-align: center;
 
 }
 h2, #f-lang{
-
   text-align: center;
 }
 
 h3{
-
   font-size: 1em;
   margin: 10px;
 }
 
 body{
+  background-color: #fcfcfc;
   color: grey;
   margin-bottom: 50px;
-
 }
 
 p {
@@ -41,29 +28,31 @@ p {
   margin-top: 25px;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.btn{
+  margin-top: 10px;
+}
+
 .btn-light {
   color: grey;
-
 }
 
 .btn-light:hover {
   color: grey;
-
 }
 
 .jumbotron {
-margin: 50px;
+  margin: 50px;
   padding-top: 36px;
   padding-bottom: 32px;
 }
 
 #consider {
   margin-top: 50px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
 }

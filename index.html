@@ -15,191 +15,181 @@
       <div class="col-lg-3">
       </div>
       <div class="col-lg-6">
-<div class="jumbotron">
-        <h1>Which developer career path may be right for me?</h1>
-
-        <p>Choosing a career path in development can be confusing.  This survey is designed to give you some ideas about the different paths, and where you might want to start your journey.</p>
-
-      </div>
+        <div class="jumbotron">
+          <h1>Which developer career path may be right for me?</h1>
+          <p>Choosing a career path in development can be confusing.  This survey is designed to give you some ideas about the different paths, and where you might want to start your journey.</p>
+        </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-lg-1">
       </div>
       <div class="col-lg-10">
-
         <p><em>Please answer true or false to the following:</em></p>
-
         <form id="tf">
-
           <h3>I am a visual person.</h3>
           <div class="radio" disabled>
             <label>
-              <input type="radio" name="visual-f" value="1">
+              <input type="radio" name="front-end" value="1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="visual-f" value="-1">
+              <input type="radio" name="front-end" value="-1">
               F
             </label>
           </div>
           <h3>I love problem solving.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="problem-b" value="-1">
+              <input type="radio" name="back-end" value="-1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="problem-b" value="1">
+              <input type="radio" name="back-end" value="1">
               F
             </label>
           </div>
           <h3>I like graphic design.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="graphic-f" value="1">
+              <input type="radio" name="front-end" value="1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="graphic-f" value="-1">
+              <input type="radio" name="front-end" value="-1">
               F
             </label>
           </div>
           <h3>I like to think about how people will use what I make.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="user-f" value="1">
+              <input type="radio" name="front-end" value="1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="user-f" value="-1">
+              <input type="radio" name="front-end" value="-1">
               F
             </label>
           </div>
           <h3>I enjoy solving logic problems.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="logic-b" value="-1">
+              <input type="radio" name="back-end" value="-1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="logic-b" value="1">
+              <input type="radio" name="back-end" value="1">
               F
             </label>
           </div>
           <h3>I thrive with complexity.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="complexity-b" value="-1">
+              <input type="radio" name="back-end" value="-1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="complexity-b" value="1">
+              <input type="radio" name="back-end" value="1">
               F
             </label>
           </div>
           <h3>I like to work with data.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="data-b" value="-1">
+              <input type="radio" name="back-end" value="-1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="data-b" value="1">
+              <input type="radio" name="back-end" value="1">
               F
             </label>
           </div>
           <h3>I care a lot about the way things look.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="aesthetics-f" value="1">
+              <input type="radio" name="front-end" value="1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="aesthetics-f" value="-1">
+              <input type="radio" name="front-end" value="-1">
               F
             </label>
           </div>
           <h3>I often think about systems.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="systems-b" value="-1">
+              <input type="radio" name="back-end" value="-1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="systems-b" value="1">
+              <input type="radio" name="back-end" value="1">
               F
             </label>
           </div>
           <h3>I have an eye for color, whether bright or subtle.</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="color-f" value="1">
+              <input type="radio" name="front-end" value="1">
               T
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="color-f" value="-1">
+              <input type="radio" name="front-end" value="-1">
               F
             </label>
           </div>
-
-
-
           <!-- submit button, hide after submitted -->
           <button type="submit" class="btn btn-light btn-lg" id="tf-btn">Submit</button>
-
         </div>
       </div>
     </form>
-    <!-- Next section will be hidden -->
+    <!-- Next section will be hidden until t/f survey complete-->
     <div class="row">
       <div class="col-lg-3">
       </div>
       <div class="col-lg-6">
         <div id="hidden-f">
           <div class="jumbotron">
-          <h2>Front-End Development</h2>
-          <h3 id="f-lang">HTML, CSS, and Javascript</h3>
-          <p>You may want to consider Front-End Development, where the user interaction with a product is paramount.  If you choose Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.</p>
+            <h2>Front-End Development</h2>
+            <h3 id="f-lang">HTML, CSS, and Javascript</h3>
+            <p>You may want to consider Front-End Development, where the user interaction with a product is paramount.  If you choose Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.</p>
+          </div>
         </div>
-      </div>
         <div id="hidden-b">
           <div class="jumbotron">
-          <h2>Back-End Development</h2>
-          <p>You may want to consider Back-End Development, where the business logic systems are built.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
+            <h2>Back-End Development</h2>
+            <p>You may want to consider Back-End Development, where the business logic systems are built.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
+          </div>
         </div>
-      </div>
         <div id="hidden-s">
           <div class="jumbotron">
-          <h2>Full-Stack Development</h2>
-          <p>You're interests are split right down the middle.  You may want to consider becoming a Full-Stack Developer who learns both the Back-End&#8212;where the business logic systems are built&#8212;and Front-End&#8212;where the user interaction with a product is paramount.  Many developers start out in one or the other and expand their knowledge in their career.  For Front-End, you will be working with HTML, CSS, and Javascript, as well as helpful Front-End frameworks, which are constantly changing and improving.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
+            <h2>Full-Stack Development</h2>
+            <p>You're interests are split right down the middle.  You may want to consider becoming a Full-Stack Developer who learns both the Back-End&#8212;where the business logic systems are built&#8212;and Front-End&#8212;where the user interaction with a product is paramount.  Many developers start out in one or the other and expand their knowledge in their career.  For Front-End, you will be working with <strong>HTML, CSS, and Javascript,</strong> as well as helpful Front-End frameworks, which are constantly changing and improving.  For Back-End, you may want to continue the survey to see which programming languages may be a good fit for you to start with.</p>
+          </div>
         </div>
       </div>
-      </div>
     </div>
-
-
-    <!-- next section is about specific languages, which comes up only if Back-End or Full-Stack was returned above -->
+    <!-- next section will come up only if Back-End or Full-Stack was returned above -->
     <form id="lang-survey">
       <div class="row">
         <div class="col-lg-1">
@@ -233,67 +223,59 @@
           User entered data, dynamic web content<br>
           <input type="checkbox" value="java">
           High performance processing<br>
-
           <!-- submit button, hide after submitted -->
           <button type="submit" class="btn btn-light btn-lg" id="lang-btn">Submit</button>
         </div>
       </div>
     </form>
-
-      <div class="row">
-        <div class="col-lg-3">
-        </div>
-        <div class="col-lg-6">
-          <div id="lang-answer">
-            <h3 id="consider"><em>You may want to consider the following language<span id="plural">s</span>:</em></h3>
-
-          </div>
-
-          <!-- hidden answer. -->
-          <div id="hidden-answers">
-
-          <div  id="c">
-            <div class="jumbotron">
-          <h2>C#</h2>
-          <p>C# can be used to create almost anything but is particularly strong at building Windows desktop applications and games. C# can also be used to develop web applications and has become increasingly popular for mobile development too. Cross-platform tools such as Xamarin allow apps written in C# to be used on almost any mobile device.</p>
-        </div>
-        </div>
-        <div id="java">
-<div class="jumbotron">
-          <h2>Java</h2>
-          <p>Since it has been around for so long, some of the biggest organizations in the world are built using the language. Many banks, retailers, insurance companies, utilities, and manufacturers all use Java.  Java is still a relevant programming language that shows no sign of declining in popularity and, for that reason, is worth learning. Many developers pick it up as their first programming language because it’s reasonably easy to learn.</p>
-        </div>
-        </div>
-        <div id="php">
-<div class="jumbotron">
-          <h2>PHP</h2>
-          <p>PHP is a programming language used for creating dynamic websites. PHP is known for its ability to optimize memory. As a result, it never allows server overloading. Instead, it helps in improving a server's processing speed significantly.</p>
-        </div>
-      </div>
-        <div id="ruby">
-<div class="jumbotron">
-          <h2>Ruby</h2>
-          <p>Ruby has become popular because of the Ruby on Rails framework for web applications. With this framework, people who know Ruby can quickly create interactive web applications.</p>
-        </div>
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-    <div id="end-message">
-
     <div class="row">
       <div class="col-lg-3">
       </div>
       <div class="col-lg-6">
-    <img src="img/ok.png" alt="okay thumbs up by momo meow">
+        <div id="lang-answer">
+          <h3 id="consider"><em>You may want to consider the following language<span id="plural">s</span>:</em></h3>
+          <!-- results of language best for user will be appended here in order of relevance -->
+        </div>
+        <!-- hidden answer, these will stay hidden unless appended to lang-answer above -->
+        <div id="hidden-answers">
+          <div  id="c">
+            <div class="jumbotron">
+              <h2>C#</h2>
+              <p>C# can be used to create almost anything but is particularly strong at building Windows desktop applications and games. C# can also be used to develop web applications and has become increasingly popular for mobile development too. Cross-platform tools such as Xamarin allow apps written in C# to be used on almost any mobile device.</p>
+            </div>
+          </div>
+          <div id="java">
+            <div class="jumbotron">
+              <h2>Java</h2>
+              <p>Since it has been around for so long, some of the biggest organizations in the world are built using the language. Many banks, retailers, insurance companies, utilities, and manufacturers all use Java.  Java is still a relevant programming language that shows no sign of declining in popularity and, for that reason, is worth learning. Many developers pick it up as their first programming language because it’s reasonably easy to learn.</p>
+            </div>
+          </div>
+          <div id="php">
+            <div class="jumbotron">
+              <h2>PHP</h2>
+              <p>PHP is a programming language used for creating dynamic websites. PHP is known for its ability to optimize memory. As a result, it never allows server overloading. Instead, it helps in improving a server's processing speed significantly.</p>
+            </div>
+          </div>
+          <div id="ruby">
+            <div class="jumbotron">
+              <h2>Ruby</h2>
+              <p>Ruby has become popular because of the Ruby on Rails framework for web applications. With this framework, people who know Ruby can quickly create interactive web applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- following message will be shown after front end result of t/f survey, or after back end survey -->
+    <div id="end-message">
+      <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-6">
+          <img src="img/ok.png" alt="okay thumbs up by momo meow">
+        </div>
+        <p>Choosing your first programming language isn't as important as you might think.  Once you learn programming it will be much easier to pick up additional languages, and it may even be expected of you.  Research what types of things you want to do, and find out what languages they use.  Perhaps try out other languages while you are learning your first so you can be comfortable switching between them.</p>
+      </div>
+    </div>
   </div>
-
-  <p>Choosing your first programming language isn't as important as you might think.  Once you learn programming it will be much easier to pick up additional languages, and it may even be expected of you.  Research what types of things you want to do, and find out what languages they use.  Perhaps try out other languages while you are learning your first so you can be comfortable switching between them.</p>
-</div>
-  </div>
-</div>
 </body>
 </html>

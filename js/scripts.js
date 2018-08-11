@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+  // when submit is clicked the following will add to n for front end and subtract for back end relevance, and n will determine the result
   $("#tf").submit(function(event) {
     event.preventDefault();
     $("#tf-btn").hide();
@@ -8,8 +10,6 @@ $(document).ready(function(){
     $("input:radio:checked").each(function() {
       n += parseInt($(this).val());
     });
-    console.log(n);
-
     if (n == 0) {
       $("#hidden-s").show();
       $("#lang-survey").show();
@@ -24,73 +24,55 @@ $(document).ready(function(){
     }
     window.scrollBy(0,1000);
   })
-
-
-
+  // when submitted, multipe answers sorted based on most checked relevant answers
   $("#lang-survey").submit(function() {
     event.preventDefault();
     $("#lang-btn").hide();
     $("#lang-answer").show();
+    $("#end-message").show();
     $("input:checkbox").attr('disabled',true);
-    // multipe answers displayed, and sorted based on most commonly checked relevant answers
-
-
-    var n = "";
+    var a = "";
     $("input:checkbox:checked").each(function() {
-      n += $(this).val();
-      console.log(n);
+      a += $(this).val();
     });
-
+    // this creates an array with arrays storing relevant checkbox ticks for each language
     var c = []
     var java = []
     var php = []
     var ruby = []
     var langs = [c,java,php,ruby]
 
-    if (n.includes("c")){
-      c.push((n.match(/c/g)).length, "c");
+    if (a.includes("c")){
+      c.push((a.match(/c/g)).length, "c");
     } else{
       c.push(0, c);
     }
-
-    if (n.includes("java")){
-      java.push((n.match(/java/g)).length, "java");
-
+    if (a.includes("java")){
+      java.push((a.match(/java/g)).length, "java");
     } else{
       java.push(0, java);
     }
-
-    if (n.includes("php")){
-      php.push((n.match(/php/g)).length, "php");
+    if (a.includes("php")){
+      php.push((a.match(/php/g)).length, "php");
     } else{
       php.push(0, "php");
     }
-
-    if (n.includes("ruby")){
-      ruby.push((n.match(/ruby/g)).length, "ruby");
+    if (a.includes("ruby")){
+      ruby.push((a.match(/ruby/g)).length, "ruby");
     } else{
       ruby.push(0, "ruby");
     }
-    console.log(langs);
-    console.log(langs[0]);
     langs.sort(function(a, b)
     {
       return b[0] - a[0];
     });
-
-    console.log(langs);
-    console.log(langs[0]);
-
-
     var plural = 0
+    // this will append each answer into #lang-answer in order of amount of relevant checkboxes clicked, using data stored in the arrays
     $(langs).each(function(){
-      console.log(this[1]);
       if (this[0] == 0){
         // do nothing
       } else{
-
         if (this[1] == "c"){
-          console.log("working");
           $("#lang-answer").append($("#c"));
           plural ++;
         }else if (this[1] == "java"){
@@ -104,19 +86,10 @@ $(document).ready(function(){
           plural ++;
         }
       }
-        $("#lang-answer").show();
-        $("#consider").show();
-
       if (plural > 1){
         $("#plural").show();
       }
       window.scrollBy(0,300);
-
-      $("#end-message").show();
-
     });
-
-
-
   })
 })
