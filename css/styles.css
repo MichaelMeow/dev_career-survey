@@ -1,4 +1,4 @@
-#hidden-f, #hidden-b, #hidden-s, #lang-survey, #hidden-answers, #lang-answer, #plural, #end-message {
+#hidden-front, #hidden-back, #hidden-stack, #lang-survey, #hidden-answers, #lang-answer, #plural, #end-message {
   display: none;
 }
 
